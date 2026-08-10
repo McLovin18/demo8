@@ -17,9 +17,9 @@ export const revalidate = 1800;
 // Cambiar cuando tengas el dominio definitivo
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://somethingbluestudio.com";
+  "https://ppcellec.com";
 
-const SITE_NAME = "Something Blue | Diseño Gráfico, Eventos y Branding Ecuador";
+const SITE_NAME = "PPCELL | Tecnología Celular en Guayaquil, Ecuador";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -30,26 +30,26 @@ const sourceSerif4 = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: "Something Blue | Diseño Gráfico, Eventos y Branding en Ecuador",
-    template: "%s | Something Blue",
+    default: "PPCELL | Tecnología Celular en Guayaquil, Ecuador",
+    template: "%s | PPCELL",
   },
 
   description:
-    "Events & Branding, productos únicos y personalizados. Personalizamos productos para todos tus eventos, con envíos a todo el Ecuador.",
+    "PPCELL, tu tienda de tecnología celular en Guayaquil - Alborada. Celulares, accesorios y equipos originales, con envíos a todo el país.",
 
   keywords: [
-    "diseño gráfico Ecuador",
-    "branding para eventos Ecuador",
-    "productos personalizados Ecuador",
-    "gift shop Ecuador",
-    "regalos personalizados eventos",
-    "decoración de eventos Ecuador",
-    "Something Blue",
-    "Paula Ferretti diseño",
-    "productos para bodas Ecuador",
-    "papelería personalizada Ecuador",
-    "branding de marca Ecuador",
-    "diseño de eventos Ecuador",
+    "celulares Guayaquil",
+    "tecnología celular Ecuador",
+    "accesorios celular Guayaquil",
+    "tienda de celulares Alborada",
+    "PPCELL",
+    "smartphones Ecuador",
+    "venta de celulares Ecuador",
+    "fundas y accesorios celular",
+    "equipos originales Ecuador",
+    "tienda tecnología Guayaquil",
+    "envíos celulares Ecuador",
+    "compra segura celulares",
   ],
 
   creator: SITE_NAME,
@@ -72,17 +72,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
 
-    title: "Something Blue | Diseño Gráfico, Eventos y Branding",
+    title: "PPCELL | Tecnología Celular",
 
     description:
-      "Events & Branding, productos únicos y personalizados. Personalizamos productos para todos tus eventos, con envíos a todo el Ecuador.",
+      "PPCELL, tu tienda de tecnología celular en Guayaquil - Alborada. Celulares, accesorios y equipos originales, con envíos a todo el país.",
 
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Something Blue - Diseño Gráfico y Branding",
+        alt: "PPCELL - Tecnología Celular",
       },
     ],
   },
@@ -90,10 +90,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Something Blue",
+    title: "PPCELL",
 
     description:
-      "Events & Branding, productos únicos y personalizados con envíos a todo el Ecuador.",
+      "Tecnología celular en Guayaquil - Alborada. Celulares, accesorios y envíos a todo el país.",
 
     images: [`${SITE_URL}/twitter-image.jpg`],
   },
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
 
-  category: "Diseño y Eventos",
+  category: "Tecnología y Celulares",
 };
 
 export const viewport: Viewport = {
