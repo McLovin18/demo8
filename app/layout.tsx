@@ -17,9 +17,9 @@ export const revalidate = 1800;
 // Cambiar cuando tengas el dominio definitivo
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://ppcellec.com";
+  "https://fabrik.ec";
 
-const SITE_NAME = "PPCELL | Tecnología Celular en Guayaquil, Ecuador";
+const SITE_NAME = "Fabrik | Cocinas, Baños y Closets Modulares en Samborondón, Ecuador";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -30,26 +30,26 @@ const sourceSerif4 = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: "PPCELL | Tecnología Celular en Guayaquil, Ecuador",
-    template: "%s | PPCELL",
+    default: "Fabrik | Cocinas, Baños y Closets Modulares en Samborondón, Ecuador",
+    template: "%s | Fabrik",
   },
 
   description:
-    "PPCELL, tu tienda de tecnología celular en Guayaquil - Alborada. Celulares, accesorios y equipos originales, con envíos a todo el país.",
+    "Fabrik diseña e instala cocinas, baños y closets modulares en Samborondón, Guayas. Espacios personalizados que llevan tu nombre. We design it, you LIVE it.",
 
   keywords: [
-    "celulares Guayaquil",
-    "tecnología celular Ecuador",
-    "accesorios celular Guayaquil",
-    "tienda de celulares Alborada",
-    "PPCELL",
-    "smartphones Ecuador",
-    "venta de celulares Ecuador",
-    "fundas y accesorios celular",
-    "equipos originales Ecuador",
-    "tienda tecnología Guayaquil",
-    "envíos celulares Ecuador",
-    "compra segura celulares",
+    "cocinas modulares Ecuador",
+    "closets modulares Samborondón",
+    "instalación de baños Guayas",
+    "diseño de cocinas Ecuador",
+    "muebles modulares Samborondón",
+    "Fabrik",
+    "remodelación de cocinas Ecuador",
+    "closets a medida Ecuador",
+    "diseño de interiores Samborondón",
+    "instalación de closets Guayaquil",
+    "cocinas a medida Ecuador",
+    "empresa de modulares Ecuador",
   ],
 
   creator: SITE_NAME,
@@ -72,17 +72,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
 
-    title: "PPCELL | Tecnología Celular",
+    title: "Fabrik | Cocinas, Baños y Closets Modulares",
 
     description:
-      "PPCELL, tu tienda de tecnología celular en Guayaquil - Alborada. Celulares, accesorios y equipos originales, con envíos a todo el país.",
+      "Fabrik diseña e instala cocinas, baños y closets modulares en Samborondón, Guayas. Espacios personalizados que llevan tu nombre.",
 
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "PPCELL - Tecnología Celular",
+        alt: "Fabrik - Cocinas, Baños y Closets Modulares",
       },
     ],
   },
@@ -90,10 +90,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "PPCELL",
+    title: "Fabrik",
 
     description:
-      "Tecnología celular en Guayaquil - Alborada. Celulares, accesorios y envíos a todo el país.",
+      "Cocinas, baños y closets modulares en Samborondón, Guayas. We design it, you LIVE it.",
 
     images: [`${SITE_URL}/twitter-image.jpg`],
   },
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
 
-  category: "Tecnología y Celulares",
+  category: "Diseño de Interiores y Remodelación",
 };
 
 export const viewport: Viewport = {
