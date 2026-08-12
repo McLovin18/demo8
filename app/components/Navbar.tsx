@@ -430,7 +430,7 @@ return (
                 className="font-bold text-base"
                 style={{ color: "#ffffff", letterSpacing: "0.08em" }}
               >
-              PEPECELLEC
+              FABRIK
               </span>
               <button
                 onClick={() => setMobileOpen(false)}
