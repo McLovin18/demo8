@@ -204,7 +204,7 @@ return (
               className="hidden lg:flex items-center leading-none"
             >
               <Image
-                src="/logo_02.png"
+                src="/logo_perfumes.png"
                 width={190}
                 height={60}
                 priority
@@ -220,7 +220,7 @@ return (
               className="pointer-events-auto flex flex-col items-center leading-none"
             >
               <Image
-                src="/logo_02.png"
+                src="/logo_perfumes.png"
                 alt="Art Design MAKR"
                 width={180}
                 height={62}
@@ -430,7 +430,7 @@ return (
                 className="font-bold text-base"
                 style={{ color: "#ffffff", letterSpacing: "0.08em" }}
               >
-              FABRIK
+              Artemisa- Perfumes árabes
               </span>
               <button
                 onClick={() => setMobileOpen(false)}

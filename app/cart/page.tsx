@@ -189,7 +189,7 @@ export default function CartPage() {
     // Si se abre después de un await, el navegador lo bloquea sin avisar.
     const whatsappWindow = window.open("", "_blank");
 
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "593997096296";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_PHONE || "593994361621";
     const message = await generateWhatsAppMessage();
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
 

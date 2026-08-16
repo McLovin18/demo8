@@ -17,9 +17,9 @@ export const revalidate = 1800;
 // Cambiar cuando tengas el dominio definitivo
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://fabrik.ec";
+  "https://artemisaperfumeria.ec";
 
-const SITE_NAME = "Fabrik | Cocinas, Baños y Closets Modulares en Samborondón, Ecuador";
+const SITE_NAME = "Artemisa | Perfumes Árabes Originales en Guayaquil, Ecuador";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -30,26 +30,26 @@ const sourceSerif4 = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: "Fabrik | Cocinas, Baños y Closets Modulares en Samborondón, Ecuador",
-    template: "%s | Fabrik",
+    default: "Artemisa | Perfumes Árabes Originales en Guayaquil, Ecuador",
+    template: "%s | Artemisa",
   },
 
   description:
-    "Fabrik diseña e instala cocinas, baños y closets modulares en Samborondón, Guayas. Espacios personalizados que llevan tu nombre. We design it, you LIVE it.",
+    "Artemisa ofrece perfumes árabes 100% originales en Guayaquil, con envíos a todo Ecuador. No ventas al por mayor.",
 
   keywords: [
-    "cocinas modulares Ecuador",
-    "closets modulares Samborondón",
-    "instalación de baños Guayas",
-    "diseño de cocinas Ecuador",
-    "muebles modulares Samborondón",
-    "Fabrik",
-    "remodelación de cocinas Ecuador",
-    "closets a medida Ecuador",
-    "diseño de interiores Samborondón",
-    "instalación de closets Guayaquil",
-    "cocinas a medida Ecuador",
-    "empresa de modulares Ecuador",
+    "perfumes árabes Ecuador",
+    "perfumes árabes Guayaquil",
+    "perfumería árabe Guayaquil",
+    "esencias árabes originales",
+    "perfumes originales Ecuador",
+    "Artemisa",
+    "fragancias árabes Guayaquil",
+    "perfumes de lujo Ecuador",
+    "tienda de perfumes Guayaquil",
+    "envíos perfumes Ecuador",
+    "perfumes importados Ecuador",
+    "aromas árabes Guayaquil",
   ],
 
   creator: SITE_NAME,
@@ -72,17 +72,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
 
-    title: "Fabrik | Cocinas, Baños y Closets Modulares",
+    title: "Artemisa | Perfumes Árabes Originales",
 
     description:
-      "Fabrik diseña e instala cocinas, baños y closets modulares en Samborondón, Guayas. Espacios personalizados que llevan tu nombre.",
+      "Artemisa ofrece perfumes árabes 100% originales en Guayaquil, con envíos a todo Ecuador. No ventas al por mayor.",
 
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Fabrik - Cocinas, Baños y Closets Modulares",
+        alt: "Artemisa - Perfumes Árabes Originales",
       },
     ],
   },
@@ -90,10 +90,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Fabrik",
+    title: "Artemisa",
 
     description:
-      "Cocinas, baños y closets modulares en Samborondón, Guayas. We design it, you LIVE it.",
+      "Perfumes árabes 100% originales en Guayaquil, Ecuador. Envíos a todo el país.",
 
     images: [`${SITE_URL}/twitter-image.jpg`],
   },
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
 
-  category: "Diseño de Interiores y Remodelación",
+  category: "Perfumería y Cosméticos",
 };
 
 export const viewport: Viewport = {
