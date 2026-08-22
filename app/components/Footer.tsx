@@ -26,12 +26,12 @@ const IconWhatsApp = () => (
 );
 
 const socialLinks = [
-  { href: "https://www.instagram.com/artemisaperfumeriaec/", label: "Instagram", Icon: IconInstagram },
+  { href: "https://www.instagram.com/zeuslojaec/", label: "Instagram", Icon: IconInstagram },
 ];
 
 // 👉 Información del negocio
-const WHATSAPP_NUMBER = "593994361621"; // solo números, con código de país, sin '+' ni espacios
-const WHATSAPP_DISPLAY = "+593 99 436 1621"; // como se muestra al usuario
+const WHATSAPP_NUMBER = "593996570792"; // solo números, con código de país, sin '+' ni espacios
+const WHATSAPP_DISPLAY = "+593 99 657 0792"; // como se muestra al usuario
 
 const Footer: React.FC = () => {
   const pathname = usePathname();
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
             {/* Columna 1: Información de la tienda */}
             <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
               <span className="text-base font-bold tracking-wide text-white">
-                Artemisa
+                Zeus
               </span>
 
               {instagramEnabled && instagramFollowers !== null && instagramFollowers > 0 && (
@@ -92,11 +92,11 @@ const Footer: React.FC = () => {
               )}
 
               <div className="text-xs text-white/60 mt-1 max-w-[220px]">
-                <p>Perfumes árabes 100% originales</p>
-                <p>No ventas al por mayor</p>
+                <p>Tienda física · Envíos a nivel nacional</p>
+                <p>Tena 12-41 entre Av. Gran Colombia y Cuxibamba</p>
                 <p className="flex items-center gap-1 justify-center md:justify-start mt-0.5">
                   <IconLocation />
-                  Guayaquil, Ecuador
+                  Loja, Ecuador
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                     <li key={label}>
                       <a
                         href={href}
-                        className="flex items-center justify-center w-9 h-9 rounded-full border border-white/15 text-white transition-colors hover:bg-[#2D4A3A] hover:border-[#2D4A3A]"
+                        className="flex items-center justify-center w-9 h-9 rounded-full border border-white/15 text-white transition-colors hover:bg-[#2563EB] hover:border-[#2563EB]"
                         target="_blank"
                         rel="noreferrer"
                         title={label}
@@ -142,7 +142,7 @@ const Footer: React.FC = () => {
                 href={`https://wa.me/${WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 text-xl text-white/70 hover:text-[#2D4A3A] transition-colors"
+                className="flex items-center gap-2 text-xl text-white/70 hover:text-[#2563EB] transition-colors"
                 onClick={() => trackLinkClick().catch(console.error)}
               >
                 <span>{WHATSAPP_DISPLAY}</span>
@@ -160,11 +160,11 @@ const Footer: React.FC = () => {
         {/* Copyright row */}
         <div className={styles.ftCopyRow}>
           <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} Artemisa. Todos los derechos reservados.
+            © {new Date().getFullYear()} Zeus. Todos los derechos reservados.
           </p>
           <div className={styles.ftCopyRight}>
             <div className="flex items-center gap-1.5 text-xs text-white/60">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#2D4A3A]" />
+              <div className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
               Hecho en Ecuador
             </div>
 
@@ -172,7 +172,7 @@ const Footer: React.FC = () => {
               href="https://www.instagram.com/hector.cobena/"
               target="_blank"
               rel="noreferrer"
-              className="text-xs text-white/50 hover:text-[#2D4A3A] transition-colors"
+              className="text-xs text-white/50 hover:text-[#2563EB] transition-colors"
               onClick={() => trackLinkClick().catch(console.error)}
             >
               Desarrollado por Héctor Cobeña

@@ -1,9 +1,5 @@
 import "./globals.css";
 
-import Footer from "./components/Footer";
-import { cookies } from "next/headers";
-import Navbar from "./components/Navbar";
-import { UserProvider } from "./context/UserContext";
 import { OnboardingProvider } from "./context/OnboardingContext";
 import { ToastProvider } from "./context/ToastContext";
 import LayoutContentClient from "./components/LayoutContentClient";
@@ -17,9 +13,9 @@ export const revalidate = 1800;
 // Cambiar cuando tengas el dominio definitivo
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://artemisaperfumeria.ec";
+  "https://zeuslojaec.com";
 
-const SITE_NAME = "Artemisa | Perfumes Árabes Originales en Guayaquil, Ecuador";
+const SITE_NAME = "Zeus | Tienda en Loja, Ecuador";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -30,26 +26,21 @@ const sourceSerif4 = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: "Artemisa | Perfumes Árabes Originales en Guayaquil, Ecuador",
-    template: "%s | Artemisa",
+    default: "Zeus | Tienda Física en Loja, Ecuador",
+    template: "%s | Zeus",
   },
 
   description:
-    "Artemisa ofrece perfumes árabes 100% originales en Guayaquil, con envíos a todo Ecuador. No ventas al por mayor.",
+    "Zeus, tienda física en Loja con envíos a nivel nacional en todo el Ecuador.",
 
   keywords: [
-    "perfumes árabes Ecuador",
-    "perfumes árabes Guayaquil",
-    "perfumería árabe Guayaquil",
-    "esencias árabes originales",
-    "perfumes originales Ecuador",
-    "Artemisa",
-    "fragancias árabes Guayaquil",
-    "perfumes de lujo Ecuador",
-    "tienda de perfumes Guayaquil",
-    "envíos perfumes Ecuador",
-    "perfumes importados Ecuador",
-    "aromas árabes Guayaquil",
+    "tienda Loja Ecuador",
+    "Zeus tienda",
+    "compras Loja",
+    "envíos nacionales Ecuador",
+    "tienda física Loja",
+    "Zeus Loja Ecuador",
+    "compras online Loja",
   ],
 
   creator: SITE_NAME,
@@ -72,17 +63,17 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
 
-    title: "Artemisa | Perfumes Árabes Originales",
+    title: "Zeus | Tienda en Loja, Ecuador",
 
     description:
-      "Artemisa ofrece perfumes árabes 100% originales en Guayaquil, con envíos a todo Ecuador. No ventas al por mayor.",
+      "Zeus, tienda física en Loja con envíos a nivel nacional en todo el Ecuador.",
 
     images: [
       {
         url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Artemisa - Perfumes Árabes Originales",
+        alt: "Zeus - Tienda en Loja, Ecuador",
       },
     ],
   },
@@ -90,10 +81,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Artemisa",
+    title: "Zeus",
 
     description:
-      "Perfumes árabes 100% originales en Guayaquil, Ecuador. Envíos a todo el país.",
+      "Tienda física en Loja, Ecuador, con envíos a nivel nacional.",
 
     images: [`${SITE_URL}/twitter-image.jpg`],
   },
@@ -125,7 +116,7 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
 
-  category: "Perfumería y Cosméticos",
+  category: "Tienda General",
 };
 
 export const viewport: Viewport = {
@@ -143,7 +134,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={sourceSerif4.variable}>
       <head>
-        {/* Google Analytics */}
+        {/* Google Analytics - reemplazar con el ID de Zeus */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-K1Q0MYDSKF"
